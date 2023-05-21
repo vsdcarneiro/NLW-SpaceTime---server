@@ -20,5 +20,5 @@ app.register(authRoutes)
 app.register(memoriesRoutes)
 
 app
-  .listen({ port: 4000 })
+  .listen({ port: 4000, host: '0.0.0.0' })
   .then(() => console.log('🚀 HTTP server running on http://localhost:4000'))
